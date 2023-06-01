@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<title>SYSProject - Sistema de Gerenciamento de Projetos</title>
+		<meta name="description" content="Sistema de Gerenciamento de Projeto">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilo.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/script.js"></script>
+		<!-- [if lt IE 9]>
+
+			<script src="js/html5shiv.js"></script>
+			
+		<![endif] -->
+	</head>
+	<body id="home">		
+	<!-- Início DIV base -->
+		<div>
+
+			<!-- Início Cabeçalho -->
+				<header class="basetop">
+					<div class="topo">
+						<img src="img/logo.svg" class="logomarca" alt="">
+						<div class="userlog">Usuário atual: Lindalva Barbosa (Gerente de Projeto) </div>
+						<div class="sair"><button class="bt-sair" onclick="location.href='login.html'">Sair</button></div>
+					</div>
+				</header>
+
+				<nav class="navegacao esconde_480px" aria-haspopup="true">
+					<h2 class="menu-icon" onclick="void(0)"><span class="esconde_480px">&equiv;</span></h2>
+					<ul>
+						<li class=""><a href="index.html">Dashboard</a></li>
+						<li class=""><a href="cad-usuario.html">Cadastro de Usuário</a></li>
+						<li class=""><a href="cad-projeto.html">Cadastro de Projeto</a></li>
+						<li class=""><a href="edi-usuario.html">Meu Cadastro</a></li>
+						<li class=""><a href="ajuda.html.html">Ajuda</a></li>
+					</ul>
+				</nav>
+
+				<nav class="navdesktop esconde_mobile">
+					<ul>
+						<li class=""><a href="index.html">Dashboard</a></li>
+						<li class=""><a href="cad-usuario.html">Cadastro de Usuário</a></li>
+						<li class=""><a href="cad-projeto.html">Cadastro de Projeto</a></li>
+						<li class=""><a href="edi-usuario.html">Meu Cadastro</a></li>
+						<li class=""><a href="ajuda.html.html">Ajuda</a></li>
+					</ul>
+				</nav>
+			<!-- Fim Cabeçalho -->
+			
+			<!-- Inicio Main  -->
+			<main id="main-page">				
+				<div id="grid">
+					<div class="tit-page">Cadastro do Projeto</div>
+				
+				<!-- Informações básicas do projeto -->
+						<div class="div-form2">
+							<div class="form">
+								<div class="label">Título</div>
+								<div><input type="text" class="campo2"></div>
+							</div>
+							<div class="form">
+								<div class="label">Descrição</div>
+								<div><textarea class="textarea"></textarea></div>
+							</div>
+							<div class="form">
+								<div class="label">Data Início</div>
+								<div><input type="text" class="campo2"></div>
+							</div>
+							<div class="form">
+								<div class="label">Data Fim</div>
+								<div><input type="text" class="campo2"></div>
+							</div>
+							<div class="form">
+								<div class="label">Status</div>
+								<div class="selecao"><select>
+									<option value="0">Selecione</option>
+									<option value="1">Pendente</option>
+									<option value="2">Em execução</option>
+									<option value="3">Atrasado</option>
+									<option value="4">Impedido</option>
+									<option value="5">Concluído</option>
+									<option value="6">Cancelado</option>
+								</select></div>
+							</div>
+						</div>
+
+					<!-- Fases do Projeto -->
+
+						<div class="sub-titulo">Fases do Projeto</div>
+						<div class="div-form2">	
+								<div class="form">
+									<div class="label">Fase</div>
+									<div><input type="text" class="campo2"></div>
+									<div><button class="bt-sair" onclick="location.href='login.html'">+</button></div>
+								</div>
+								<div class="form-tab">
+									<div class="bloco">
+										<table id="table">
+										  <tr>
+										    <th>Fase</th>
+										    <th>Ordem</th>
+										    <th></th>
+										  </tr>
+										  <tr>
+										    <td>Elaboração</td>
+										    <td>01 <img class="ico-ordem" src="img/ico-reorder.svg" class="" alt=""></td>
+										   	<td></td>
+										  </tr>
+										  <tr>
+										    <td>Implatação</td>
+										    <td>02 <img class="ico-ordem" src="img/ico-reorder.svg" class="" alt=""></td>
+										   	<td></td>
+										  </tr>
+										</table>
+									</div>
+								</div>
+						</div>
+
+					<!-- Esquipe do projeto -->
+						<div class="sub-titulo">Equipe do Projeto</div>
+						<div class="div-form2">
+							<div class="form">
+								<div class="label">Gerente</div>
+								<div class="selecao"><select>
+									<option value="0">Selecione</option>
+									<option value="1">Gerente 1</option>
+									<option value="2">Gerente 2</option>
+								</select></div>
+								<div><button class="bt-sair" onclick="location.href='login.html'">+</button></div>
+							</div>
+							<div class="form">
+								<div class="label">Analista</div>
+								<div class="selecao"><select>
+									<option value="0">Selecione</option>
+									<option value="1">Analista 1</option>
+									<option value="2">Analista 2</option>
+								</select></div>
+								<div><button class="bt-sair" onclick="location.href='login.html'">+</button></div>
+							</div>
+							<div class="form-tab">
+									<div class="bloco">
+										<table id="table">
+										  <tr>
+										    <th>Nome</th>
+										    <th>Usuário</th>
+										    <th>Perfil</th>
+										  </tr>
+										  <tr>
+										    <td>Machado de Assis</td>
+										    <td>machado</td>
+										   	<td>Gerente</td>
+										  </tr>
+										  <tr>
+										    <td>Marina Andrade</td>
+										    <td>marina</td>
+										   	<td>Analista</td>
+										  </tr>
+										</table>
+									</div>
+								</div>
+						</div>
+
+
+					<!-- Botões de finalização da tela -->
+						<div class="div-form3">
+							<div class="botoes">
+								<div><button class="bt-cancelar" onclick="location.href='#'">Cancelar</button></div>
+								<div><button class="bt-ok" onclick="location.href='#'">Confirmar</button></div>
+							</div>
+						</div>
+				</div>
+		
+			</main>
+			<!-- Fim Main  -->
+
+			<!-- Início Rodapé -->
+			<footer class="baserodape"><div class="rodape">Todos os Direitos Reservados @ 2023</div></footer>
+			<!-- Fim Rodapé -->
+
+		</div>
+		<!-- Fim DIV base -->
+
+	</body>
+</html>

@@ -1,0 +1,1 @@
+<footer class="baserodape"><div class="rodape">Todos os Direitos Reservados @ 2023</div></footer>
